@@ -1,0 +1,107 @@
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image:url('6.jpg'); 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100%,100%;
+    }
+    
+    .signup-container {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: aqua;
+      width: 250;
+      length: 400;
+    }
+    
+    h2 {
+      margin-bottom: 20px;
+    }
+    
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    label {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      background-color: #fff;
+      padding: 0 5px;
+      font-size: 16px;
+      color: #999;
+      transition: 0.3s;
+    }
+    
+    input:focus + label, input:valid + label {
+      font-size: 12px;
+      top: 0;
+      transform: translateY(0);
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+    </style>
+    
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <title>Sign Up Page</title>
+    </head>
+    <body>
+      <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form>
+          <div class="input-group">
+            <input type="text" id="firstName" required>
+            <label for="firstName">First Name</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="lastName" required>
+            <label for="lastName">Last Name</label>
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="input-group">
+            <input type="password" id="password" required>
+            <label for="password">Password</label>
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </body>
+    </html>

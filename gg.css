@@ -1,0 +1,12 @@
+*{
+     li{ overflow:hidden;
+        font-size: 24pt;
+        padding: 15pt;
+        display:inline-block;
+        margin-left: 60px;
+        color: beige;
+      }.container{
+        background-image:url(bgimg.3.jpeg);   
+      }
+    }         
+</style>
